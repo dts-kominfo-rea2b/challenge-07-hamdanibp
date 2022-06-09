@@ -1,7 +1,7 @@
 const { promiseTheaterIXX, promiseTheaterVGC } = require("./external.js");
 
 // TODO: Buat fungsi promiseOutput sesuai ketentuan readme
-const promiseOutput = async (emosi) => {
+const promiseOutput = emosi => {
   const ixx = promiseTheaterIXX()
     .then(results => results.map(result => result.hasil))
 
